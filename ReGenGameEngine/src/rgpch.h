@@ -14,7 +14,7 @@
 
 #include "ReGen_Engine/Log.h"
 
-typedef float floot;
+typedef float floot; // Only GLU Game developer student will know this joke.
 
 #ifdef RG_PLATFORM_WINDOWS
 	#include <Windows.h>

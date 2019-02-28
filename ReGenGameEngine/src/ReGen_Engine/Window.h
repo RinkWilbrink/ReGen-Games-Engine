@@ -5,7 +5,7 @@
 #include "ReGen_Engine/Core.h"
 #include "Events/Event.h"
 
-namespace ReGemGames
+namespace ReGenGames
 {
 	struct WindowProps
 	{

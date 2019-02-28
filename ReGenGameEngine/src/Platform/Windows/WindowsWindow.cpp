@@ -6,7 +6,8 @@
 #include "Events/MouseEvent.h"
 #include "Events/KeyEvent.h"
 
-namespace Hazel {
+namespace ReGenGames
+{
 
 	static bool s_GLFWInitialized = false;
 
@@ -36,7 +37,7 @@ namespace Hazel {
 		m_Data.Width = props.Width;
 		m_Data.Height = props.Height;
 
-		HZ_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
+		DEBUG_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
 		if (!s_GLFWInitialized)
 		{
