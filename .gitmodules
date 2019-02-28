@@ -1,0 +1,6 @@
+[submodule "ReGenGameEngine/vendor/spdlog"]
+	path = ReGenGameEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "ReGenGameEngine/vendor/GLFW"]
+	path = ReGenGameEngine/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW

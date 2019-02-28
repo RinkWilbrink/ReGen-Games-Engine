@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Events">
+      <UniqueIdentifier>{3A8963B1-262B-8E87-0FE6-A1DBFB2615D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReGen_Engine">
+      <UniqueIdentifier>{2BCD4B76-1730-DB1A-C0B5-13D1ACF7A69D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="customlibrarys">
+      <UniqueIdentifier>{A810DA2C-94DE-CD32-7D72-3E5969DFA997}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Events\ApplicationEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\Event.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\KeyEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\MouseEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ReGenGames.h" />
+    <ClInclude Include="src\ReGen_Engine\Application.h">
+      <Filter>ReGen_Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ReGen_Engine\Core.h">
+      <Filter>ReGen_Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ReGen_Engine\EntryPoint.h">
+      <Filter>ReGen_Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ReGen_Engine\Log.h">
+      <Filter>ReGen_Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\customlibrarys\Functions.h">
+      <Filter>customlibrarys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rgpch.h" />
+    <ClInclude Include="src\ReGen_Engine\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReGen_Engine\Application.cpp">
+      <Filter>ReGen_Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReGen_Engine\Log.cpp">
+      <Filter>ReGen_Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rgpch.cpp" />
+  </ItemGroup>
+</Project>
