@@ -6,7 +6,7 @@
 #include "Events/KeyEvent.h"
 
 //#include <glad/glad.h>
-
+/*
 namespace ReGenGames
 {
 	static bool s_GLFWInitialized = false;
@@ -164,4 +164,4 @@ namespace ReGenGames
 		return m_Data.VSync;
 	}
 
-}
+}*/

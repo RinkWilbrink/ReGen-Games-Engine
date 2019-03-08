@@ -6,7 +6,7 @@
 #pragma once
 
 #ifndef SPDLOG_H
-#error "spdlog.h must be included before this file."
+#include "spdlog/spdlog.h"
 #endif
 
 #ifdef _WIN32
@@ -51,6 +51,6 @@ inline std::shared_ptr<logger> stderr_color_mt(const std::string &logger_name)
 template<typename Factory = default_factory>
 inline std::shared_ptr<logger> stderr_color_st(const std::string &logger_name)
 {
-    return Factory::template create<sinks::stderr_color_sink_mt>(logger_name);
+    return Factory::template create<sinks::stderr_color_sink_st>(logger_name);
 }
 } // namespace spdlog

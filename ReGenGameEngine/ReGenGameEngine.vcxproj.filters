@@ -46,11 +46,13 @@
     <ClInclude Include="src\ReGen_Engine\Log.h">
       <Filter>ReGen_Engine</Filter>
     </ClInclude>
+    <ClInclude Include="src\ReGen_Engine\Window.h">
+      <Filter>ReGen_Engine</Filter>
+    </ClInclude>
     <ClInclude Include="src\customlibrarys\Functions.h">
       <Filter>customlibrarys</Filter>
     </ClInclude>
     <ClInclude Include="src\rgpch.h" />
-    <ClInclude Include="src\ReGen_Engine\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
