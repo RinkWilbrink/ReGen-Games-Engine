@@ -18,11 +18,11 @@ namespace ReGenGames
 		WindowResizeEvent e(1280, 720);
 		if (e.IsInCategory(EventCategoryApplication))
 		{
-			RG_TRACE(e);
+			CORE_TRACE(e);
 		}
 		if (e.IsInCategory(EventCategoryInput))
 		{
-			RG_INFO(e);
+			CORE_INFO(e);
 		}
 
 		//While loop to keep the program running

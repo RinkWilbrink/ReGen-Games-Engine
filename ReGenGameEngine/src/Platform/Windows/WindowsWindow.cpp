@@ -5,8 +5,8 @@
 #include "Events/MouseEvent.h"
 #include "Events/KeyEvent.h"
 
-//#include <glad/glad.h>
-/*
+#include <glad/glad.h>
+
 namespace ReGenGames
 {
 	static bool s_GLFWInitialized = false;
@@ -50,8 +50,8 @@ namespace ReGenGames
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
-		//int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		//RG_CORE_ASSERT(status, "Failed to initialize Glad!");
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		RG_CORE_ASSERT(status, "Failed to initialize Glad!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
@@ -164,4 +164,4 @@ namespace ReGenGames
 		return m_Data.VSync;
 	}
 
-}*/
+}

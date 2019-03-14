@@ -13,8 +13,11 @@ workspace "ReGenGameEngine"
 	-- Include directories relative to root folder
 	IncludeDir = {}
 	IncludeDir["GLFW"] = "ReGenGameEngine/vendor/GLFW/include"
-  --IncludeDir["Glad"] = "ReGenGameEngine/vendor/Glad/inlcude"
-  --IncludeDir["ImGui"] = "ReGenGameEngine/vendor/imgui"
+  IncludeDir["Glad"] = "ReGenGameEngine/vendor/Glad/include"
+	--IncludeDir["ImGui"] = "ReGenGameEngine/vendor/imgui"
+	
+	include "ReGenGameEngine/vendor/GLFW"
+	include "ReGenGameEngine/vendor/Glad"
 	
 	project "ReGenGameEngine"
 		location "ReGenGameEngine"
@@ -37,15 +40,15 @@ workspace "ReGenGameEngine"
 		{
 			"%{prj.name}/vendor/spdlog/include",
 			"%{prj.name}/src",
-			"%{IncludeDir.GLFW}"--, 
-			--%{InlcudeDir.Glad},
+			"%{IncludeDir.GLFW}", 
+			"%{IncludeDir.Glad}",
 			--%{IncludeDir.ImGui}--
 		}
 		
 		links
 		{
 			"GLFW",
-			--"Glad",
+			"Glad",
 			--"ImGui",
 			"opengl32.lib"
 		}
@@ -58,7 +61,7 @@ workspace "ReGenGameEngine"
 			{
 				"RG_PLATFORM_WINDOWS",
 				"RG_BUILD_DLL",
-				"GLFW_INLCUDE_NONE"
+				"GLFW_INCLUDE_NONE"
 			}
 			
 			postbuildcommands

@@ -18,23 +18,23 @@ namespace ReGenGames
 }
 
 ///<summary>TRACE for in Engine debugging</summary>
-#define DEBUG_TRACE(...)::ReGenGames::Log::getCoreLogger()->trace(__VA_ARGS__)
+#define CORE_TRACE(...)::ReGenGames::Log::getCoreLogger()->trace(__VA_ARGS__)
 ///<summary>INFO for in Engine debugging</summary>
-#define DEBUG_INFO(...)::ReGenGames::Log::getCoreLogger()->info(__VA_ARGS__)
+#define CORE_INFO(...)::ReGenGames::Log::getCoreLogger()->info(__VA_ARGS__)
 ///<summary>WARNING for in Engine debugging</summary>
-#define DEBUG_WARN(...)::ReGenGames::Log::getCoreLogger()->warn(__VA_ARGS__)
+#define CORE_WARN(...)::ReGenGames::Log::getCoreLogger()->warn(__VA_ARGS__)
 ///<summary>ERROR for in Engine debugging</summary>
-#define DEBUG_ERROR(...)::ReGenGames::Log::getCoreLogger()->error(__VA_ARGS__)
+#define CORE_ERROR(...)::ReGenGames::Log::getCoreLogger()->error(__VA_ARGS__)
 ///<summary>FATAL for in Engine debugging</summary>
-#define DEBUG_FATAL(...)::ReGenGames::Log::getCoreLogger()->fatal(__VA_ARGS__)
+#define CORE_FATAL(...)::ReGenGames::Log::getCoreLogger()->fatal(__VA_ARGS__)
 
 ///<summary>TRACE for client program debugging</summary>
-#define RG_TRACE(...)::ReGenGames::Log::getClientLogger()->trace(__VA_ARGS__)
+#define DEBUG_TRACE(...)::ReGenGames::Log::getClientLogger()->trace(__VA_ARGS__)
 ///<summary>INFO for client program debugging</summary>
-#define RG_INFO(...)::ReGenGames::Log::getClientLogger()->info(__VA_ARGS__)
+#define DEBUG_INFO(...)::ReGenGames::Log::getClientLogger()->info(__VA_ARGS__)
 ///<summary>WARNING for client program debugging</summary>
-#define RG_WARN(...)::ReGenGames::Log::getClientLogger()->warn(__VA_ARGS__)
+#define DEBUG_WARN(...)::ReGenGames::Log::getClientLogger()->warn(__VA_ARGS__)
 ///<summary>ERROR for client program debugging</summary>
-#define RG_ERROR(...)::ReGenGames::Log::getClientLogger()->error(__VA_ARGS__)
+#define DEBUG_ERROR(...)::ReGenGames::Log::getClientLogger()->error(__VA_ARGS__)
 ///<summary>FATAL for client program debugging</summary>
-#define RG_FATAL(...)::ReGenGames::Log::getClientLogger()->fatal(__VA_ARGS__)
+#define DEBUG_FATAL(...)::ReGenGames::Log::getClientLogger()->fatal(__VA_ARGS__)
