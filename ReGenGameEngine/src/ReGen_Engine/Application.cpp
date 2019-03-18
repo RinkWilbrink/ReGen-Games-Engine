@@ -44,7 +44,7 @@ namespace ReGenGames
 		//While loop to keep the program running
 		while (isRunning)
 		{
-			glClearColor(1, 1, 1, 0); // Background Colour
+			glClearColor(0, 0, 0, 1); // Background Colour
 			glClear(GL_COLOR_BUFFER_BIT);
 
 			/*
