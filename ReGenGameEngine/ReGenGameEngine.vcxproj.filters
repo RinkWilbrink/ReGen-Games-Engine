@@ -53,6 +53,9 @@
       <Filter>customlibrarys</Filter>
     </ClInclude>
     <ClInclude Include="src\rgpch.h" />
+    <ClInclude Include="src\ReGen_Engine\CoreFunctions.h">
+      <Filter>ReGen_Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -65,5 +68,8 @@
       <Filter>ReGen_Engine</Filter>
     </ClCompile>
     <ClCompile Include="src\rgpch.cpp" />
+    <ClCompile Include="src\ReGen_Engine\CoreFunctions.cpp">
+      <Filter>ReGen_Engine</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -157,6 +157,7 @@
     <ClInclude Include="src\ReGenGames.h" />
     <ClInclude Include="src\ReGen_Engine\Application.h" />
     <ClInclude Include="src\ReGen_Engine\Core.h" />
+    <ClInclude Include="src\ReGen_Engine\CoreFunctions.h" />
     <ClInclude Include="src\ReGen_Engine\EntryPoint.h" />
     <ClInclude Include="src\ReGen_Engine\Log.h" />
     <ClInclude Include="src\ReGen_Engine\Window.h" />
@@ -166,6 +167,7 @@
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\ReGen_Engine\Application.cpp" />
+    <ClCompile Include="src\ReGen_Engine\CoreFunctions.cpp" />
     <ClCompile Include="src\ReGen_Engine\Log.cpp" />
     <ClCompile Include="src\rgpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

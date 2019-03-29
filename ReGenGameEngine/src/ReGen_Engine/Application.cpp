@@ -18,6 +18,11 @@ namespace ReGenGames
 
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
+
+
+		Vector2f position{ 1, 2 };
+
+		std::cout << position.x << std::endl;
 	}
 
 	Application::~Application()
@@ -44,7 +49,7 @@ namespace ReGenGames
 		//While loop to keep the program running
 		while (isRunning)
 		{
-			glClearColor(0, 0, 0, 1); // Background Colour
+			glClearColor(1, 0, 0, 1); // Background Colour
 			glClear(GL_COLOR_BUFFER_BIT);
 
 			/*
