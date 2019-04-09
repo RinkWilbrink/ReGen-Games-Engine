@@ -44,7 +44,7 @@ extern ReGenGames::Application* ReGenGames::CreateApplication();
 int main(int argc, char** argv)
 {
 	ReGenGames::Log::Init();
-	DEBUG_INFO("Initialization completed!");
+	CORE_INFO("Initialization completed!");
 	auto app = ReGenGames::CreateApplication();
 	app->Run();
 	delete app;

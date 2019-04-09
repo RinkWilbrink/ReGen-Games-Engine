@@ -2,7 +2,6 @@
 #include "Application.h"
 #include "ReGen_Engine/Log.h"
 //#include "Input.h"
-
 #include <glad/glad.h>
 
 namespace ReGenGames
@@ -11,6 +10,7 @@ namespace ReGenGames
 
 	Application* Application::s_Instance = nullptr;
 
+	// Start function
 	Application::Application()
 	{
 		RG_CORE_ASSERT(!s_Instance, "Application already exists!");
@@ -18,11 +18,6 @@ namespace ReGenGames
 
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
-
-
-		Vector2f position{ 1, 2 };
-
-		std::cout << position.x << std::endl;
 	}
 
 	Application::~Application()
@@ -49,14 +44,8 @@ namespace ReGenGames
 		//While loop to keep the program running
 		while (isRunning)
 		{
-			glClearColor(1, 0, 0, 1); // Background Colour
 			glClear(GL_COLOR_BUFFER_BIT);
-
-			/*
-			for(Layer* layer : m_LayerStack)
-				layer->OnUpdate();
-			*/
-
+			glClearColor(1, 0, 0, 1);
 			m_Window->OnUpdate();
 		}
 	}

@@ -7,7 +7,7 @@ class Game : public ReGenGames::Application
 public:
 	Game() 
 	{
-		DEBUG_INFO("test game;");
+		DEBUG_INFO("start game;");
 	}
 	~Game() 
 	{
