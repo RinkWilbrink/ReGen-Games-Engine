@@ -4,36 +4,39 @@
 namespace ReGenGames
 {
 #pragma region Vectors
-	///<summary> 2 Dimensional Vector of integer value </summary>
+	/*
 	///<param name="x coordinate"></param> /// <returns></returns>
-	typedef struct
+	///<param name="y coordinate"></param> /// <returns></returns>
+	*/
+	///<summary>2 Dimensional Vector of integer value.</summary>
+	struct Vector2i
 	{
-		int x, y;
-	}Vector2i;
-	///<summary> 2 Dimensional Vector of float value </summary>
-	typedef struct
+		int x = 0, y = 0;
+	};
+	///<summary>2 Dimensional Vector of float value.</summary>
+	struct Vector2f
 	{
-		float x, y;
-	}Vector2f;
-
-	typedef struct
+		float x = 0, y = 0;
+	};
+	///<summary>2 Dimensional Vector of double value.</summary>
+	struct Vector2do
 	{
-		double x, y;
-	}Vector2do;
-	///<summary> 3 Dimensional Vector of integer values </summary>
-	typedef struct
+		double x = 0, y = 0;
+	};
+	///<summary>3 Dimensional Vector of integer values.</summary>
+	struct Vector3i
 	{
-		int x, y, z;
-	}Vector3i;
-	///<summary> 3 Dimensional Vector of float values </summary>
-	typedef struct
+		int x = 0, y = 0, z = 0;
+	};
+	///<summary>3 Dimensional Vector of float values.</summary>
+	struct Vector3f
 	{
-		float x, y, z;
-	}Vector3f;
-	///<summary> 3 Dimensional Vector of double values </summary>
-	typedef struct
+		float x = 0, y = 0, z = 0;
+	};
+	///<summary>3 Dimensional Vector of double values.</summary>
+	struct Vector3do
 	{
-		double x, y, z;
-	}Vector3do;
+		double x = 0, y = 0, z = 0;
+	};
 #pragma endregion
 }

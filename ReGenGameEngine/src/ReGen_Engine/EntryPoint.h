@@ -33,7 +33,7 @@ void StartUpCommand(int argc, char** argv)
 }
 #else
 //Execute the Start Up Commands! (function is empty, Set PreProcessor statement to true)
-void StartUpCommand(int argc, char** argv) {}
+void StartUpCommand(int argc, char** argv) { }
 #endif
 #pragma endregion
 
@@ -43,8 +43,7 @@ extern ReGenGames::Application* ReGenGames::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	ReGenGames::Log::Init();
-	CORE_INFO("Initialization completed!");
+	ReGenGames::Log::Init(); CORE_INFO("Log Initialization completed!");
 	auto app = ReGenGames::CreateApplication();
 	app->Run();
 	delete app;
